@@ -1,0 +1,93 @@
+*{
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family      : Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(https://admin.goweatherforecast.com/images/bg_app@2x.png);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.app-wrap{
+    display         : flex;
+    flex-direction  : column;
+    min-height      : 100vh;
+}
+
+header{
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    padding        : 50px 15px 15px;
+}
+
+header input{
+    width           : 100%;
+    max-width       : 300px;
+    padding         : 10px 15px;
+    border          : none;
+    outline         : none;
+    background-color: white;
+    color           : black;
+    border-radius   : 20px 20px 20px;
+    border-bottom   : 3px solid indianred;
+    font-size       : 20px;
+    font-weight     : 600;
+}
+header input:focus{
+    background-color: white;
+}
+
+main{
+    flex          : 1 1 100%;
+    padding       : 25px 25px 50px;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    text-align    : center;
+}
+
+.location .city{
+    color        : white;
+    font-size    : 32px;
+    font-weight  : 800px;
+    margin-bottom: 5px;
+}
+
+.location .date{
+    color    : white;
+    font-size: 16px;
+}
+
+.current .temp{
+    color      : white;
+    font-size  : 50px;
+    font-weight: 900;
+    margin     : 30px 0px;
+    text-shadow: 2px 8px black;
+}
+
+.current .temp span{
+    font-weight: 500;
+}
+
+.current .weather{
+    color        : white;
+    font-size    : 32px ;
+    font-weight  : 700;
+    font-style   : italic;
+    margin-bottom: 15px;
+    text-shadow  : 0px 3px black;
+}
+
+.current .hi-low{
+    color      : white;
+    font-size  : 24px;
+    font-weight: 500;
+    text-shadow: 0px 4px black;
+}

@@ -1,0 +1,141 @@
+*{
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    width           : 90%;
+    background-image: url(https://vpassets.infinityfree.net/welcome2017/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    height          : 100vh;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    font-family     : Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    margin          : 0 0 0 auto;
+    width           : 90%;
+    height          : 80%;
+    border          : none;
+    border-radius   : 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    display         : flex;
+    flex-direction  : column;
+    overflow        : hidden;
+    cursor          : auto;
+    background-image: url(https://cdn.wallpaperhub.app/cloudcache/7/4/f/3/d/5/74f3d51cbec9db78da32e103de1b28538af1b76a.jpg);
+    background-size : cover;
+    transition      : .8s ease-in;
+}
+
+.container:hover{
+   
+    background-image: url(https://i0.wp.com/doist.com/blog/wp-content/uploads/sites/3/2017/08/Ways-to-add-tasks-to-Todoist-.png?fit=2000%2C1000&quality=85&strip=all&ssl=1);
+    background-size : cover;
+}
+
+
+.title{
+    width          : 100%;
+    font-weight    : 900;
+    font-size      : larger;
+    height         : 15%;
+    color          : india;
+    font-family    : Verdana, Geneva, Tahoma, sans-serif;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.addSection{
+    width  : 100%;
+    height : 10%;
+    opacity: 1;
+    
+}
+
+.taskInput{
+    margin       : 10px 10px 0px ;
+    padding      : 20px;
+    width        : 210px;
+    height       : 40px;
+    border-radius: 15px 0 0 15px;
+    border       : 1px solid #dbdbdb;
+    border-right : none;
+    outline      : none;
+    align-items  : center;
+}
+
+.add{
+    width           : 60px;
+    height          : 42px;
+    margin          : 15px auto 10px -20px;
+    background-color: #f7b71d;
+    color           : white;
+    border          : none;
+    border-radius   : 0 15px 15px 0;
+    outline         : none;
+    font-weight     : bold;
+    cursor          : pointer;
+    transition      : all .5s ease-in;
+}
+
+.add:hover{
+    background-color: indianred;
+}
+
+.list{
+    width   : 100%;
+    height  : 60%;
+    padding : 10px 10px 10px 10px;
+    overflow: auto;
+    animation-name: ;
+}
+
+
+.taskContainer{
+    border-bottom  : 5px solid #dbdbdb;
+    background     : white;
+    padding        : 5px 0 5px 10px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+
+
+.task{
+    width: 270px;
+}
+
+i.fas.fa-check, i.fas.fa-trash-alt{
+    opacity     : .9;
+    margin-right: 30px;
+    cursor      : pointer;
+    transition  : all 0.1s ease-in-out;
+}
+
+i.fas.fa-check:hover{
+    color: #0c9463;
+}
+
+i.fas.fa-trash-alt:hover{
+    color: #ff0000;
+}
+
+i.fas.fa-check:active{
+    transform: translateY(3px);
+}
+
+i.fas.fa-trash-alt:active{
+    transform: translateY(3px);
+}
+
+.taskContainer:hover i.fas.fa-check, .taskContaier:hover i.fas.fa-trash-alt{
+    opacity: 1;
+}
